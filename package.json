@@ -1,0 +1,28 @@
+{
+  "name": "payment-protocol-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "truffle test",
+    "stripe": "node stripe-payment/be.js",
+    "compile": "truffle compile",
+    "deploy": "truffle migrate --network development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SotaTek-ThinhPhung/payment-protocol-demo"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.1.0",
+    "dotenv": "^16.0.0",
+    "web3": "^1.6.0",
+    "express": "^4.17.1",
+    "stripe": "^9.0.0"
+  }
+}
